@@ -17,38 +17,41 @@ body {
 
 
 
-nav {
-    background-color: rgb(54, 55, 56);
-    padding: 0.5em;
-    position: fixed;
-    width: 100%;
-    top: 0;
-   color: white;
-text-align: right;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(16, 15, 15);
+    color: white;
+
+}
+
+
+
+
+.menu {
+    display: flex;
+
+}
+
+
+
+.menu li {
+    list-style: none;
+    margin-left: 20px;
 
 
 }
 
-nav p{
-    float: left;
-}
-
-
-nav a {
-margin-top: 0.5em;
-    margin-right: 1em;
-    display: inline-block;
+.menu li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 0.5em;
+    color: white;
+    display: block;
+    padding: 5px;
+
 }
-
-nav a:hover {
-
-    background-color: #ddd;
-    color: black;
-}
-
 
 
 
@@ -74,14 +77,14 @@ nav a:hover {
 
 }
 
-.section p{
+.section p {
     font-size: 1.5em;
 }
 
 .foto {
-    
+
     width: 13em;
-    height:13em;
+    height: 13em;
     border-radius: 6em;
 
 }
@@ -90,17 +93,17 @@ nav a:hover {
     background-color: rgb(255, 255, 255);
     text-align: center;
     height: 50em;
-    padding: 10em;
+    padding: 4em;
 }
 
-.section2 h1{
+.section2 h1 {
     line-height: 1em;
     font-size: 3em;
 }
 
-.section2 p{
-    line-height: 1.5em;
-    margin-top: 4em;
+.section2 p {
+    line-height: 2em;
+    margin-top: 1.5em;
 }
 
 
@@ -116,13 +119,13 @@ nav a:hover {
 }
 
 .midia2 {
-   
+
     width: 2em;
     height: 2em;
 }
 
 .midia3 {
-    width: 2em;
+    width: 4em;
     height: 2em;
 }
 
@@ -133,13 +136,13 @@ nav a:hover {
 
 
 .section3 {
-    background-color: rgb(0, 145, 255);
+    background-color: rgb(5, 88, 243);
     text-align: center;
     height: 50em;
     padding: 10em;
 }
 
-.section4{
+.section4 {
     text-align: center;
     height: 50em;
 }
@@ -149,6 +152,8 @@ nav a:hover {
 footer {
 
     margin-top: 40em;
-    background-color: blue;
+    background-color: rgb(16, 15, 15);
     padding: 10px;
+    color: white;
 }
+

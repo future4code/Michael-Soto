@@ -14,39 +14,43 @@ body {
 
 
 
-nav {
-    background-color: rgb(54, 55, 56);
-    padding: 0.5em;
-    position: fixed;
-    width: 100%;
-    top: 0;
-   color: white;
-text-align: right;
+header {
+    display: flex;
+    justify-content: space-between;
+   padding: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(16, 15, 15);
+    color: white;
+}
+
+
+
+
+.menu {
+    display: flex;
+}
+
+
+
+.menu li {
+    list-style: none;
+    margin-left: 20px;
 
 
 }
 
-nav p{
-    float: left;
-}
-
-
-nav a {
-margin-top: 0.5em;
-    margin-right: 1em;
-    display: inline-block;
+.menu li a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    padding: 0.5em;
+    color: white;
+    display: block;
+    padding: 5px;
 }
 
-nav a:hover {
-
-    background-color: #ddd;
-    color: black;
+h1 {
+    margin: 50px 60px 10px 10px;
+    text-align: center;
 }
-
-
 
 form {
     border-radius: 2px;
@@ -63,3 +67,11 @@ form {
 }
 
 
+
+footer {
+
+    margin-top: 40em;
+    background-color: rgb(16, 15, 15);
+    padding: 10px;
+    color: white;
+}

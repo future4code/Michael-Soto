@@ -90,11 +90,19 @@ div img {
 }
 
 .icone {
-    height: 1.6em;
+    height: 3em;
     width: 3em;
    
 }
 
+
+.icone:hover{
+    opacity: 0.5;
+}
+
+.icone:active{
+    opacity: 1.0;
+}
 
 /** 
   *
@@ -160,6 +168,7 @@ td button:active{
 
 td img{
     width: 3em;
+    
 }
 
 .container-do-search {

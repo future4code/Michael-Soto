@@ -56,7 +56,7 @@ div img {
     position: relative;
 
     right: 15em;
-    top: 8em;
+    top: 33em;
 }
 
 .botao-amarelo:hover {
@@ -113,6 +113,9 @@ div:last-child {
 
 table {
     width: 60%;
+    
+    text-align: center;
+    
 }
 
 td button {

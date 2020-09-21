@@ -32,6 +32,14 @@ img {
 
 div>p:first-child {
     display: inline;
+    position: relative;
+  top: 10em;
+   
+}
+
+.container ol,li,h3{
+    position: relative;
+    top: 7em;
 }
 
 div img {
@@ -58,6 +66,7 @@ div img {
 .container {
     height: 500px;
     text-align: center;
+   
 }
 
 .icone {

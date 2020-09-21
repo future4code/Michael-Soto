@@ -19,6 +19,11 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px #000 solid
+
 }
 
 button:focus {
@@ -142,8 +147,10 @@ td img{
 }
 
 .container-do-search {
-    margin-top: 20px;
+    margin-top: 70px ;
+  border-bottom: 1em solid blue;
     height: 100px;
+    
 }
 
 

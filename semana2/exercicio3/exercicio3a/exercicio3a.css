@@ -9,22 +9,11 @@ body {
 
 .green-background {
     background-color: green;
-    
 }
 
 .yellow-background {
     background-color: yellow;
-    display: flex;
 }
-
-.menu a{
-
-}
-
-.menu a li{
-     ;
-}
-
 
 .pink-background {
     background-color: fuchsia;

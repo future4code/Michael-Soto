@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    
+   
+    font-family: 'Didact Gothic', sans-serif;
+    color: rgb(84, 81, 77);
+    font-weight: bolder;
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(207, 207, 226);
+    box-shadow: 5px 2px rgb(240, 232, 232);
+    height: 5em;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    
+}
+
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:flex-start;
+    align-items: center;
+    
+}
+
+
+.menu img {
+    height: 60px;
+    width: 80px;
+}
+
+.menu li {
+    list-style-type: none;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.cadastro {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    height: 40px;
+    margin-left: 20em;
+    top: 1.5em;
+    right: 10em;
+}
+
+
+
+.carrosel {
+    margin-top: 10em;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.carrosel img {
+    height: 60em;
+    width: 100%;
+}
+
+.container1 {
+    margin: 0 4em 0em 4em;
+}
+
+.container1 p {
+    z-index: 1;
+    font-size: 2em;
+    margin: 0 4em 0em 4em;
+    color: white;
+    position: absolute;
+    top: 10em
+}
+
+.container1 button {
+    position: absolute;
+    left: 35em;
+    top: 30em;
+    height: 4em;
+    width: 10em;
+    background-color: rgb(145, 37, 181);
+    color: white;
+    border-radius: 2em;
+    font-size: 1.0em;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.celular img {
+    position: absolute;
+    width: 400px;
+    top: 42em;
+    height: 30em;
+    right: 20em;
+}
+
+.container2 {
+    margin-top: 6em;
+    width: 100%;
+}
+
+.container3 {}
+
+.texto3 {
+    position: relative;
+    bottom: 40em;
+    left: 10em;
+}
+
+.container4 {}
+
+.container5 {}
+
+.container6 {}
+
+.container7 {}
+
+.container8 {}
+
+.container9 {}
+
+
+footer {
+    height: 10em;
+    background-color: ;
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+.rodape2 {
+    font-family: 'Didact Gothic', sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.rodape2 img {
+    
+    height: 40px;
+    width: 40px;
+ 
+}

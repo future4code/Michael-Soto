@@ -15,6 +15,7 @@ header {
     align-items: center;
     padding: 1em;
     height: 3em;
+  
 
 
 }
@@ -32,6 +33,7 @@ input {
     margin-right: 5em;
     height: 2em;
     width: 10em;
+display: flex;
 
 }
 
@@ -42,11 +44,17 @@ section {
 }
 
 
+.secao p{
+    font-weight: bold;
+    position: relative;
+    top: 4em;
+    left: 5em;
+}
 
 
 
 .container {
-
+margin-left: 2em;
     margin-top: 2em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -79,7 +87,7 @@ section {
 
 .quadrado {
 
-    height: 18em;
+    height: 17em;
     width: 12.7em;
     border: 1px solid green;
    
@@ -113,4 +121,27 @@ footer {
     height: 2em;
     background-color: black;
     color: white;
+}
+
+
+
+@media screen (min-device-width: 320px) and (max-device-width:480px){
+
+
+
+
+   
+    .container {
+       display: flex;
+       width: 20px;
+       height:10px;
+       flex-flow: column nowrap;
+        
+    }
+
+
+
+
+
+
 }

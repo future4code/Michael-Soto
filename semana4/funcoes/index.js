@@ -6,28 +6,27 @@
 // nenhuma mensagem no console
 
 // 2. a
-// Darvas 
+// Darvas
 // Caio
 
 // // b.
-// Amanda 
+// Amanda
 // Caio
 
 // 3.
 // Define uma função que identifica os valores pares pare de um array
 
-
 // 4. a
 // const mensagem = () => {
 //   console.log('Eu sou Michael,tenho 26 anos, moro em Sergipe e sou estudante.')
-  
+
 // }
 
 // mensagem()
 
 // b
 // const pessoa = (nome,idade,cidade,boolean) => {
- 
+
 // idade = Number
 
 //   nome = prompt('Digite seu nome')
@@ -50,7 +49,7 @@
 
 // function Soma(a, b) {
 //   console.log( a + b);
-  
+
 // }
 
 // Soma(4,10)
@@ -71,27 +70,77 @@
 
 // c.
 
-// let mostrarMensagem = () => {       
+// let mostrarMensagem = () => {
 //   for(let i = 0; i < 11 ; i++) {
 //     const meuArray = ['Hello World' ]
 //     console.log(meuArray)
 //   }
-  
+
 // }
 
 // let int = mostrarMensagem()
 
 // 6. a
-const array = () => {
 
+// let numeros = (array) => {
+// for(let i = 0; i < array.length; i++) {
+//   console.log(array[i])
+// }
+// return array.length
+// }
+// const meuArray = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+// let tamanho = numeros(meuArray)
 
+// b
+
+// let numeros = (par) => {
+
+//   if(par % 2 === 0 ){
+//     console.log('É par')
+//   }else{
+//     console.log ('Não é par')
+//   }
+//   return par
+//   }
+
+//   numeros(11)
+
+// c
+
+function passandoPelosPares() {
   
+  for (var i = 0; i < meuArray.length; i++  ) {
+   
+   
+    if (meuArray % 2 === 0) { 
+      console.log(meuArray[i])
+    }
+  }
+ 
 }
 
+const meuArray = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
+ console.log(passandoPelosPares)
 
 
- 
- 
+// passandoPelosPares(meuArray);
+//
+// numeros2 = meuArray
+// console.log(numeros2)
 
+// d
 
+//  let numeros3 = (array2) => {
+// for(let i = 0; i < array2.length; i++) {
+//   console.log(array2[i])
+// if(array2[i] % 2 === 0){
+//   console.log('É par')
+// }else{
+//   console.log ('É impar')
+// }
 
+// }
+// return array2.length
+// }
+// const meuArray = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22]
+// let tamanho = numeros3(meuArray)

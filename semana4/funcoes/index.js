@@ -107,26 +107,36 @@
 
 // c
 
-function passandoPelosPares() {
-  
-  for (var i = 0; i < meuArray.length; i++  ) {
-   
-   
-    if (meuArray % 2 === 0) { 
-      console.log(meuArray[i])
-    }
+const arrayNum = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
+const mostrarPar = () => {
+for (par=0; par< Array.length; par++){;
+
+if (par % 2 === 0) {
+  par = num
+ arrayPar.push(arrayNum[i])
   }
- 
 }
+return arrayPar.length
+} 
 
-const meuArray = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
- console.log(passandoPelosPares)
+console.log(arrayNum)
 
 
-// passandoPelosPares(meuArray);
-//
-// numeros2 = meuArray
-// console.log(numeros2)
+// const arrayNum = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
+// let par = 0
+// const mostrarPar = (a) => {
+//   for (let num of arrayNum) {
+//   if(num % 2 === 0) {
+// par = num 
+// console.log(num)
+
+//   }
+//   }
+
+// }
+// console.log(arrayNum)
+
+
 
 // d
 

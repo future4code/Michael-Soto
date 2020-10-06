@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(116, 201, 204);
+    background-color: rgb(168, 193, 194);
+    color: black;
 }
 
 
@@ -9,7 +10,7 @@ body{
 #calendario{
 display: flex;
 justify-content: space-around;
-color: blue;
+
 
 }
 

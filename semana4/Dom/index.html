@@ -12,30 +12,27 @@
 <body>
 
     <h2>Minha Semana</h2>
-
-
+    
     <input list="days" type="text" id="meu-input" required>
-   
-    <select id="sem" name="minhaSemana">
-        <option value="seg">Segunda-feira</option>
-        <option value="ter">Terça-feira</option>
-        <option value="qua">Quarta-feira</option>
-        <option value="qui">Quinta-feira</option>
-        <option value="sex">Sexta-feira</option>
-        <option value="sab">Sabado</option>
-        <option value="dom">Domingo</option>
-   
+    <select id="semana" name="minhaSemana">
+        <option value="seg" id="segunda">Segunda-feira</option>
+        <option value="ter" id="terca">Terça-feira</option>
+        <option value="qua" id="quarta">Quarta-feira</option>
+        <option value="qui" id="quinta">Quinta-feira</option>
+        <option value="sex" id="sexta">Sexta-feira</option>
+        <option value="sab" id="sabado">Sabado</option>
+        <option value="dom" id="domingo">Domingo</option>
       </select>
-      <button onclick="adicionaTarefa()"> Criar tarefa</button>
+
+   
+      <button onclick="adicionaTarefa()">Adicionar Tarefa</button>
        
     
-
-  
-
+<hr>
 
     <div id="calendario">
 
-        <p id="segunda">
+        <p id="dia1">
 
             <ul id="minhalista">
                 Segunda 
@@ -43,34 +40,34 @@
             </p>
 
          
-        <p id="terca">
+        <p id="dia2">
             <ul id="minhalista2">
                 Terça
             </ul>
             
             </p>
 
-            <p id="quarta">
+            <p id="dia3">
                 <ul id="minhalista3">
                     Quarta
                 </ul>
 
-                <p id="quinta">
+                <p id="dia4">
                     <ul id="minhalista4">
                         Quinta
                     </ul>
 
-                    <p id="sexta">
+                    <p id="dia5">
                         <ul id="minhalista5">
                             Sexta
                         </ul>
 
-                        <p id="sabado">
+                        <p id="dia6">
                             <ul id="minhalista6">
                                 Sabado
                             </ul>
 
-                            <p id="domingo">
+                            <p id="dia7">
                                 <ul id="minhalista7">
                                    Domingo
                                 </ul>

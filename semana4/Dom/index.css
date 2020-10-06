@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(116, 201, 204);
+}
+
+
+
+
+
+#calendario{
+display: flex;
+justify-content: space-around;
+color: blue;
+
+}
+
+#minha-lista{
+    display: flex;
+    flex-direction: column;
+}
+
+#calendario{
+   
+   
+}
+
+
+#segunda, #terca, #quarta, #quinta, #sexta, #sabado, #domingo{
+
+    /* border-right: 1px solid black;
+    height:  80em; */
+}
+
+input,button,select{
+    
+   position: relative;
+   bottom: 3em;
+   left: 30em;
+
+    
+}

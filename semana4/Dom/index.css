@@ -1,41 +1,43 @@
-body{
-    background-color: rgb(168, 193, 194);
-    color: black;
-}
-
-
-
-
-
-#calendario{
-display: flex;
-justify-content: space-around;
-
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 
 }
 
-#minha-lista{
+header{
+    height: 12vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-#calendario{
+section{
+    display: flex;
+    justify-content: space-evenly;
+    height: 90vh;
    
+}
+
+.semana{
+    border: 1px solid black;
+   padding: 0.6em;
+    width: 14vw;
+   
+    /* padding: 0.4em; */
+}
+.linha{
+    border-bottom: 1px solid black;
+    margin-bottom: 2em;
+    
+    width: 11em;
+}
+
+body{
+    background-color: rgb(111, 156, 211);
    
 }
 
 
-#segunda, #terca, #quarta, #quinta, #sexta, #sabado, #domingo{
 
-    /* border-right: 1px solid black;
-    height:  80em; */
-}
 
-input,button,select{
-    
-   position: relative;
-   bottom: 3em;
-   left: 30em;
-
-    
-}

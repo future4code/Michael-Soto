@@ -1,31 +1,59 @@
-function cliqueAqui() {
-  const mostrartitulo = document.getElementById("titulo-post").value;
-  const mostrarautor = document.getElementById("autor-post").value;
-  const mostrarconteudo = document.getElementById("conteudo-post").value;
+let arrayPosts = [];
 
-const [a,b,c] = [mostrartitulo,mostrarautor,mostrarconteudo]
+function cliqueAqui() {  /* Adiciona valor no console */
+  const mostrartitulo = document.getElementById("titulo-post")
+const mostrarautor = document.getElementById("autor-post")
+const mostrarconteudo = document.getElementById("conteudo-post")
 
-console.log('Titulo:', a)
-console.log('Autor:', b)
-console.log('Conteudo:', c)
-console.log('')
+  const mostrar = {
+    titulo: mostrartitulo.value,
+    autor: mostrarautor.value,
+    conteudo: mostrarconteudo.value,
+  };
+
+  arrayPosts.push(mostrar);
+  // Apaga o conteudo que foi digitado
+  mostrartitulo.value = ""; 
+  mostrarautor.value = "";
+  mostrarconteudo.value = "";
+
+  console.log(mostrar)
+  inserirPost(); /* Chama a função inserirPosts */
 }
-  
-  // document.getElementById("confirm").onreset = function () 
-    document.getElementById('cliqueAqui').value='';
-    //  nomedalet.value = ""
- 
 
 
-// function mostrarArray() {
 
-// const [a,b,c,d] = [arraydeObjeto,mostrartitulo,mostrarautor,mostrarconteudo]
+function inserirPost() { /* Prepara todos os elmentos do console em um array   */
+  const container = document.getElementById("container-de-posts")
+  container.innerHTML = ""
+  for (let item of arrayPosts) {
+      container.innerHTML += criaPost(item) /* Chama a funcao criaPost */
+  }
+}
 
-// console.log[a]
-// console.log[b]
-// console.log[c]
-// console.log[d]
+function criaPost(itemPost) {   /* Adiciona valor embaixo do Criar Post  */
+  return "<div class='post-individual'>" +
+      "<p>" + "Titulo: " + itemPost.titulo + "</p>" +
+      "<p>" + "Autor: " + itemPost.autor + "</p>" +
+      "<p>" + "Conteudo: " + itemPost.titulo + "</p>" +
+      "<hr>" 
+      "</div>"
+}
 
-// console.log(arraydeObjeto)
-// const adicione = arraydeObjeto.push('')
+
+
+//  console.log('Titulo:', mostrartitulo)
+//  console.log('Autor:', mostrarautor)
+//  console.log('Conteudo:', mostrarconteudo)
+//  console.log('')
+
+//  arrayPosts.push(mostrartitulo)
+//  arrayPosts.push(mostrarautor)
+//  arrayPosts.push(mostrarconteudo)
+
+//  mostrartitulo.value = ""
+// mostrarautor.value = ""
+// mostrarconteudo.value = ""
+
+// inserirPosts()
 // }

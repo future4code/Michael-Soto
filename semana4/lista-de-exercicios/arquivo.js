@@ -1,4 +1,4 @@
-// INTERPRETAÇÃO DE CÓDIGOS     
+// INTERPRETAÇÃO DE CÓDIGOS
 // 1.
 
 //  Crie uma função com um valor(parametro)
@@ -8,7 +8,6 @@
 //  Imprima no console a constante meuDinheiro
 
 // 100 * (Numero que foi digitado pelo usuario) Ex >>> 100 * (10) = 100
-
 
 // 2.
 // Crie uma funcao com 2 valores(parametro)
@@ -24,7 +23,6 @@
 // 165
 // Alert >>> TIPO DE INVESTIMETO INFORMADO INCORRETO
 
-
 // 3.//  Crie uma const numeros e armazene varios array dentro dele
 //  Crie uma const arra1 vazia
 //  Crie uma const array2 vazia
@@ -35,7 +33,6 @@
 // Quantidade total de números, 14
 // 6
 // 8
-
 
 // 4.
 //  Crie uma const numeros e armazene varios array dentro dele
@@ -52,11 +49,10 @@
 // const array = [1,2,3,4,5]
 // console.log( array)
 
-
 // const listas = [3, 4, 89, 56, 31, 48, 1, 100]
 // for (let lista of listas) {
 //     console.log(lista)
-// } 
+// }
 
 //   const nota = [3, 4, 89, 56, 31, 48, 1, 100]
 //   i=0
@@ -69,38 +65,37 @@
 // a) false
 // b) false
 // c)  true
-// d) true 
+// d) true
 // e)  true
 
 // 3.
+// INCOMPLETO
 
+// const fim = Number(prompt("Digite o último número a imprimir:"))
+// let i = 0
+// while (i <= fim) {
+//      if (i % 2 === 0){
+//       const quantidade = Number(prompt("Digite a quantidade:"))
+//          console.log(fim[quantidade])
 
-
-// const quantidadeDeNumerosPares = [0, 2, 4, 8, 10,12]       INCOMPĹETO
-// i = 0
-// while (i < quantidadeDeNumerosPares.length) {
-//   if (quantidadeDeNumerosPares % 2 === 0) {
-//     console.log(quantidadeDeNumerosPares[i])
-//   }
-//   console.log('oekdfjei')
-//   i++
+//      }
+//      i++
 // }
 
-// 4. 
+// 4.
 
-// function triangulo(a, b, c) {   INCOMPLETO 
+// function triangulo(a, b, c) {
 //   const valortriangulo = prompt('Digite o 1º valor do triangulo')
 //   const valortriangulo2 = prompt('Digite o 2º valor do triangulo')
 //   const valortriangulo3 = prompt('Digite o 3º valor do triangulo')
 
-//   if (valortriangulo === valortriangulo2 && valortriangulo !== valortriangulo3 || valortriangulo3 !== valortriangulo2) {
-//     console.log('O triangulo é isosceles')
-//   } else if (valortriangulo !== valortriangulo2 && valortriangulo !== valortriangulo3 || valortriangulo3 !== valortriangulo2) {
-//     console.log('O triangulo é escaleno')
-//   } else {
+//   if (valortriangulo === valortriangulo2 && valortriangulo2 === valortriangulo3) {
 //     console.log('O triangulo é equilatero')
+//   } else if (valortriangulo != valortriangulo2 && valortriangulo2 != valortriangulo3 && valortriangulo3 != valortriangulo) {
+//     console.log('O triangulo é isosceles')
+//   } else {
+//     console.log('O triangulo é escaleno')
 //   }
-
 // }
 
 // console.log(triangulo(3, 3, 3))
@@ -110,7 +105,7 @@
 //   const numero = 15
 //   const numero2 = 30
 //   if(numero > numero2){
-  
+
 //     console.log('O maior é: ',numero)
 //   }else{
 //     console.log('O maior é: ',numero2)
@@ -127,7 +122,6 @@
 //   }
 // console.log('A diferença entre eles é:',valor2 - valor)
 
-
 // FUNÇÕES
 // 1.
 
@@ -135,9 +129,9 @@
 // var text = " ";
 // let i
 // for(i=0; i < numeros.length; i++){
-//   console.log(numeros) 
-//   break 
-    
+//   console.log(numeros)
+//   break
+
 // }
 
 // text += numeros[i] ;
@@ -152,4 +146,51 @@
 
 // console.log(valor())
 
+// Exercicio de Obejtos
 
+// 1.
+// Array é uma matriz que pode armazenar varios valores em uma unica variavel, voce pode acessar esses valores a qualquer momento do seu codigo consultando o numero de indices
+// Objetos é uma entidade com propriedades e tipos como se fosse um objeto da vida real,voce pode definir o objeto como nome de carro por exemplo atribuindo uma propriedade como modelo e seu tipo como ford
+
+// 2.
+// function retangulo(lado1,lado2){
+//   const largura = lado1
+//   const altura = lado2
+//   const perimetro = 2*(lado1+lado2)
+//   const area = lado1*lado2
+//     console.log(`Largura: ${largura}\nAltura: ${altura}\nPerimetro: ${perimetro}\nArea: ${area}`)
+// }
+// retangulo(3,4)
+
+// 3.
+// const filme = {
+//   titulo: "O senhor dos aneis",
+//   ano: 2014,
+//   diretor: "Sthepen Close",
+//   elenco: ["Matheus", "Atlas", "Savitar"],
+// };
+
+// console.log(
+//   `Venha assistir ao filme \n${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.elenco}`
+// );
+
+4.
+// function anominizarPesoa (){
+//   const usuario = {
+//   nome:'Jose',
+//   idade: 24,
+//   email: 'jose@gmail.com',
+//   endereço:'Rua Jatoba 203'
+//   }
+//   const novoUsuario = {
+//     ...usuario,
+//     nome:"Anonimo"
+   
+//   }
+//  console.log(novoUsuario)
+// }
+
+// anominizarPesoa()
+
+// Funções de Array
+// 1.a

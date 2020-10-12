@@ -69,17 +69,15 @@
 // e)  true
 
 // 3.
-// INCOMPLETO
 
-// const fim = Number(prompt("Digite o último número a imprimir:"))
 // let i = 0
-// while (i <= fim) {
-//      if (i % 2 === 0){
-//       const quantidade = Number(prompt("Digite a quantidade:"))
-//          console.log(fim[quantidade])
+// let soma =0
+// const num = Number(prompt("Digite um número inteiro: "))
 
-//      }
-//      i++
+// while(i < num) {
+//  console.log(soma)
+//  soma += 2
+//   i++
 // }
 
 // 4.
@@ -174,7 +172,7 @@
 //   `Venha assistir ao filme \n${filme.titulo}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.elenco}`
 // );
 
-4.
+// 4.
 // function anominizarPesoa (){
 //   const usuario = {
 //   nome:'Jose',
@@ -185,7 +183,7 @@
 //   const novoUsuario = {
 //     ...usuario,
 //     nome:"Anonimo"
-   
+
 //   }
 //  console.log(novoUsuario)
 // }
@@ -194,3 +192,179 @@
 
 // Funções de Array
 // 1.a
+// const pessoa = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 }
+// ]
+// const pessoasAdultas = pessoa.filter((elemento,index,pessoa) => {
+// if(elemento.idade >= 20){
+//   return true
+// }
+// return false
+// })
+
+// console.log(pessoasAdultas)
+
+// b.
+// const pessoa2 = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 }
+// ]
+// const criancas = pessoa2.filter((elemento,index,pessoa2) => {
+// if(elemento.idade <= 20){
+//   return true
+// }
+// return false
+// })
+// console.log(criancas)
+
+// 2.a
+
+// function multiDois(){
+// const array = [1, 2, 3, 4, 5, 6]
+// const numeros = array.map((elemento,index,array)=>{
+//   return ` ${elemento*2}`
+// })
+// console.log(numeros)
+// }
+// console.log(multiDois())
+
+// b.
+
+// function multiTres(){
+// const array = [1, 2, 3, 4, 5, 6]
+// const numeros = array.map((elemento,index,array)=>{
+//   return ` ${elemento*3}`
+// })
+// console.log(numeros)
+// }
+// console.log(multiTres())
+
+// c.
+
+// function numerosPareImpar() {
+//   const array = [1, 2, 3, 4, 5, 6];
+//   const numeros = array.map((elemento, index, array) => {
+//     if (elemento % 2 === 0) {
+//       console.log(` ${elemento}, é par`);
+//     } else {
+//       console.log(` ${elemento}, é impar`);
+//     }
+//   });
+// }
+// console.log(numerosPareImpar());
+
+// 3.a
+
+// function regrasParquinho() {
+//   const pessoas = [
+//         { nome: "Paula", idade: 12, altura: 1.8 },
+//         { nome: "João", idade: 20, altura: 1.3 },
+//         { nome: "Pedro", idade: 15, altura: 1.9 },
+//         { nome: "Luciano", idade: 22, altura: 1.8 },
+//         { nome: "Artur", idade: 10, altura: 1.2 },
+//         { nome: "Soter", idade: 70, altura: 1.9 },
+//       ];
+//   const numeros = pessoas.filter((elemento, index, pessoas) => {
+//     if ( elemento.altura >= 1.5 && elemento.idade >= 14 && elemento.idade <= 60) {
+//   console.log(elemento)
+
+//     }
+//   });
+// }
+// regrasParquinho()
+
+// b.
+
+// function regrasParquinho() {
+//   const pessoas = [
+//         { nome: "Paula", idade: 12, altura: 1.8 },
+//         { nome: "João", idade: 20, altura: 1.3 },
+//         { nome: "Pedro", idade: 15, altura: 1.9 },
+//         { nome: "Luciano", idade: 22, altura: 1.8 },
+//         { nome: "Artur", idade: 10, altura: 1.2 },
+//         { nome: "Soter", idade: 70, altura: 1.9 },
+//       ];
+//   const numeros = pessoas.filter((elemento, index, pessoas) => {
+//     if ( elemento.altura >= 1.5 && elemento.idade >= 14 && elemento.idade <= 60) {
+//   return true
+//     } else{
+//       console.log(elemento)
+//     }
+//   });
+// }
+// regrasParquinho()
+
+// 4.
+// const consultas = [
+//   {
+//     nome: "João",
+//     genero: "masculino",
+//     cancelada: true,
+//     dataDaConsulta: "01/10/2019",
+//   },
+//   {
+//     nome: "Pedro",
+//     genero: "masculino",
+//     cancelada: false,
+//     dataDaConsulta: "02/10/2019",
+//   },
+//   {
+//     nome: "Paula",
+//     genero: "feminino",
+//     cancelada: true,
+//     dataDaConsulta: "03/11/2019",
+//   },
+//   {
+//     nome: "Márcia",
+//     genero: "feminino",
+//     cancelada: false,
+//     dataDaConsulta: "04/11/2019",
+//   },
+// ];
+
+// const mostrar = consultas.forEach((elemento, index, consultas) => {
+//   if (elemento.cancelada === true && elemento.genero === "masculino") {
+//     console.log(`Olá, Sr. ${elemento.nome}. Estamos enviando esta mensagem para lembrá-lo
+//   da sua consulta no dia ${elemento.dataDaConsulta}. Por favor, acuse
+//  o recebimento deste e-mail.`);
+//   } else if (elemento.cancelada === false && elemento.genero === "feminino") {
+//     console.log(`Olá, Sra. ${elemento.nome}. Estamos enviando esta mensagem para lembrá-la
+//   da sua consulta no dia ${elemento.dataDaConsulta}. Por favor, acuse
+//  o recebimento deste e-mail.`);
+//   } else if (elemento.cancelada === false && elemento.genero === "masculino") {
+//     console.log(`Olá,Sr. ${elemento.nome}. Infelizmente, sua consulta marcada
+//   para o dia ${elemento.dataDaConsulta} foi cancelada. Se quiser, pode entrar em
+//   contato conosco para remarcá-la`);
+//   } else  {
+//     console.log(`Olá,Sra. ${elemento.nome}. Infelizmente, sua consulta marcada
+//   para o dia ${elemento.dataDaConsulta} foi cancelada. Se quiser, pode entrar em
+//   contato conosco para remarcá-la`);
+//   }
+// });
+
+// 5;
+// INCOMPLETO
+// const contas = [
+//   { cliente: "João", saldoTotal: 1000, compras: [100, 200, 300] },
+//   { cliente: "Paula", saldoTotal: 7500, compras: [200, 1040] },
+//   { cliente: "Pedro", saldoTotal: 10000, compras: [5140, 6100, 100, 2000] },
+//   { cliente: "Luciano", saldoTotal: 100, compras: [100, 200, 1700] },
+//   { cliente: "Artur", saldoTotal: 1800, compras: [200, 300] },
+//   { cliente: "Soter", saldoTotal: 1200, compras: [] },
+// ];
+// const soma = contas.forEach((cliente, index, contas) => {
+//   let soma = soma + 300;
+//   for (let compra of contas) {
+//   }
+
+//   cliente.saldoTotal -= soma;
+//   for (let i = 0; i < cliente.saldoTotal.length; i++) {
+//     soma += cliente.saldoTotal[i];
+//   }
+//   console.log(soma);
+// });

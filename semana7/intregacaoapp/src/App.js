@@ -10,15 +10,14 @@ state= {
 }
 
 changePage = (  ) => {
-  this.setState({formPage: !this.state.formPage })
+  this.setState({formPage:     !this.state.formPage })
 }
 
 render() {
-  const currentPage = this.state.FormPage? <FormPage /> : <UserListPage />
+  const currentPage = this.state.FormPage? (<FormPage />) : ( <UserListPage />)
 
   return (
     <div className="App">
-
 {currentPage}
 <br />
 <button onClick={this.changePage}>Mudar de Página</button>

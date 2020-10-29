@@ -29,9 +29,7 @@ class FormPage extends React.Component {
       email: this.state.emailValue,
     };
 
-    axios
-      .post(
-        "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
+    axios.post("https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
         body,
         {
           headers: {
@@ -85,4 +83,4 @@ class FormPage extends React.Component {
   }
 }
 
-export default FormPage;
+export default  FormPage;

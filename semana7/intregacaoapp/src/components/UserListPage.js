@@ -36,7 +36,8 @@ class UserListPage extends React.Component {
     //   console.log(error.message)
     // }
 
-    axios(baseUrl, axiosConfig)
+    axios
+    .get(baseUrl, axiosConfig)
       .then((resposta) => {
         this.setState({ usersList: resposta.data });
       })

@@ -56,7 +56,8 @@ class App extends React.Component {
   }
 
   buscarPokemons = () => {
-    const apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=151";
+    const apiUrl = "https://pokeapi.co/api/v2/pokemon/?limit=100&offset=700";
+    
     axios.get(apiUrl).then((resposta) => {
       // handle success
       this.setState({ pokemonLista: resposta.data.results });

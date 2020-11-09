@@ -14,7 +14,7 @@ const[curtido,setCurtido] = useState(false)
 const[numeroCurtidas,setNumeroCurtidas] = useState(0)
 const[comentando,setComentando] = useState(false)
 const[numeroComentarios,setNumeroComentarios] = useState(0)
-const[comentarios,setComentarios] = useState("")
+const[comentarios,setComentarios] = useState( [] )
 
 
   const onClickCurtida = () => {
@@ -38,14 +38,12 @@ setCurtido(!curtido)
   const enviarComentario = (comentario) => {
     const listaDeComentarios = [...comentarios, comentario]
 
-    setComentando({
-      comentarios: listaDeComentarios,
-      comentando: false,
-      numeroComentarios: numeroComentarios + 1
-    })
+  setComentarios(listaDeComentarios)
+  setComentando(!comentando)
+  setNumeroComentarios(numeroComentarios +1)
   }
 
-  const iconeCurtida = (numeroComentarios) ? (iconeCoracaoPreto) : (iconeCoracaoBranco)
+  const iconeCurtida = curtido? (iconeCoracaoPreto) : (iconeCoracaoBranco)
 
 
   const caixaDeComentario = comentando ? (
@@ -72,20 +70,20 @@ setCurtido(!curtido)
       <PostPhoto src={props.fotoPost} alt={'Imagem do post'}/>
 
       <PostFooter>
-        {caixaDeComentario}
+     
         <IconeComContador
-          // icone={iconeCurtida}
+          icone={iconeCurtida}
           onClickIcone={onClickCurtida}
-          // valorContador={numeroCurtidas}
+          valorContador={numeroCurtidas}
         />
 
         <IconeComContador
           icone={iconeComentario}
           onClickIcone={onClickComentario}
-          // valorContador={numeroComentarios}
+          valorContador={numeroComentarios}
         />
       </PostFooter>
-      {/* {caixaDeComentario} */}
+      {caixaDeComentario}
     </PostContainer>
   )
 }

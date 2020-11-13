@@ -2,11 +2,14 @@
 
   display: flex;
   
-  margin-left: 7rem;
   justify-content: space-around;
 }
 
 h3{
-  color: pink;
+  color: rgb(255, 0, 0);
   text-shadow: 2px 2px 4px #000000;
 }
+
+
+
+

@@ -1,24 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import "./Botao.css";
 import HighlightOffIcon from "@material-ui/icons/HighlightOff";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-// import { Container } from './styles';
-
-function Botao() {
-
-
-  // const clickCoracao = (event) => {
-  //   console.log("aaaaaaa");
-  //   setPerfil(event.target.value);
-  // };
-
-  // const clickX = (event) => {
-  //   console.log("eeeeeee");
-  //   setPerfil(event.target.value);
-  // };
 
 
 
+
+const Botao = (props) => {
+  const [perfil, setPerfil] = useState([]);
+ 
+
+  const onClickBotaoX = () => {
+    console.log("eeeeeee");
+    const body = {
+      id: perfil.id,
+      choice:false
+    }
+  };
+
+  const onClickCoracao = () => {
+    console.log("aaaaaaa");
+ 
+    }
 
 
 
@@ -26,15 +29,17 @@ function Botao() {
 
   return (
     <div className="App-iconPerfil">
+        <a href="www.google.com">
       <HighlightOffIcon
         color="secondary"
         style={{ fontSize: 40 }}
-        // onClick={clickX}
+        onClick={onClickBotaoX}
       />
+      </a>
       <FavoriteIcon
         color="secondary"
         style={{ fontSize: 40 }}
-        // onClick={clickCoracao}
+        onClick={onClickCoracao}
       />
     </div>
   );

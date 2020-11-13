@@ -12,11 +12,11 @@ body {
 
 .App {
 
-margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   margin-left: 30rem;
-justify-content: space-between;
+  justify-content: space-between;
   width: 400px;
   height: 36rem;
   background-color: white;
@@ -27,18 +27,21 @@ justify-content: space-between;
    right: 35%; */
 }
 
+.Linha{
+border-bottom: 1px solid lightgray;
 
+padding: 0 10px;
+	flex-shrink: 0;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
 
-
-
-
-
-
+button{
+  margin-left: 72rem;
+}
 
 
 @keyframes App-logo-spin {

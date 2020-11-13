@@ -57,7 +57,20 @@ useEffect(() => {
   });
 }, []);
 
-
+const  choosePerson = (match) => {
+  let body
+  if (match === "yes") {
+    body = {
+ id:perfilId,
+ choice:true
+    }
+  } else if (match === "no") {
+    body = {
+      id:profileId,
+      choice:false
+    }
+  }
+}
 
 
 
@@ -78,6 +91,7 @@ return (
 {perfil.bio}
 </div>
 </div>
+
 </div>
 )
 }

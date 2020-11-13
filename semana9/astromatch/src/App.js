@@ -8,15 +8,21 @@ import Botao from "./components/Botao/Botao";
 function App() {
 
   return (
+    <div>
     <div className="App">
      <Header />
+     <div className="Linha">
 
+     </div>
 
 <Post />
 
 <Botao />
 
     </div>
+    <button>Limpar swipes e matches</button>
+    </div>
+    
   );
 };
 

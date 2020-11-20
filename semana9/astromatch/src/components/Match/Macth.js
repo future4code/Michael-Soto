@@ -13,8 +13,8 @@ const Match = (props) => {
 
 
   return (
-    <div className="App-header">
-      <h3>astroMatch</h3>
+   <div className="ListItemContainer">
+<img src={'https://picsum/photos/30/30'} />
 
       <SupervisorAccountIcon
         color="primary"

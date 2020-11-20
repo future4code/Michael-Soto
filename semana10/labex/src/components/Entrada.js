@@ -8,17 +8,18 @@ export const Container = styled.div`
   justify-content:space-around;
 align-content:flex-end;
 margin-top:17rem;
+
   
 `;
 
-export const Caixa1 = styled.div`
- background-color:blue;
+export const Caixa1 = styled.button`
+ background-color:#14213D;
  padding:1rem;
  width:10rem;
 `;
 
-export const Caixa2 = styled.div`
- background-color:blue;
+export const Caixa2 = styled.button`
+ background-color:#14213D;
  padding:1rem;
  width:10rem;
 `;

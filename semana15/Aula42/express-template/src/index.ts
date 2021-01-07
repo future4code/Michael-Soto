@@ -6,6 +6,7 @@ const app = express()
 
 app.use(express.json());
 app.use(cors());
+
 //Endpoint 1
 app.get('/countries/all', (req:Request, res:Response)=> {
   const result = countries.map(country => ({

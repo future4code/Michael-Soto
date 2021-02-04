@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { businessCreateTask, businessGetTaskById } from "./business/taskBusiness";
+import { businessCreateTask, businessGetTaskById } from "../business/taskBusiness";
 
 export const getTaskById = async (
    req: Request,

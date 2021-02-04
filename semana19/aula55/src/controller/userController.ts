@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { businessLogin, businessSignup,businessGetProfile } from "./business/userBusiness";
-import { getTokenData } from "./business/services/authenticator";
+import { businessLogin, businessSignup,businessGetProfile } from "../business/userBusiness";
+import { getTokenData } from "../business/services/authenticator";
 
 
 //Import userRouter (login)

@@ -1,5 +1,5 @@
 import express from "express"
-import { signup, login, getProfile } from "../../userController";
+import { signup, login, getProfile } from "../userController";
 
 export const taskRouter = express.Router()
 
